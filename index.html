@@ -1,195 +1,255 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avion</title>
-    <link rel="icon" type="image/x-icon" href="assets/icons/logo.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avion</title>
+  <link rel="icon" href="assets/icons/logo.ico">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="container">
-        <h1 class="logo">Avion</h1>
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container header__top">
+    <div></div>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Горшки для растений</a></li>
-                <li><a href="#">Керамика</a></li>
-                <li><a href="#">Столы</a></li>
-                <li><a href="#">Стулья</a></li>
-                <li><a href="#">Кухонная утварь</a></li>
-                <li><a href="#">Посуда</a></li>
-                <li><a href="#">Столовые приборы</a></li>
-            </ul>
-        </nav>
+    <h1 class="header__logo">Avion</h1>
+
+    <div class="header__icons">
+      <img src="assets/icons/Purchase.png" alt="Cart">
+      <img src="assets/icons/Checkmark--outline.png" alt="Account">
     </div>
+  </div>
+
+  <hr class="header__line">
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li><a href="#">Горшки для растений</a></li>
+      <li><a href="#">Керамика</a></li>
+      <li><a href="#">Столы</a></li>
+      <li><a href="#">Стулья</a></li>
+      <li><a href="#">Кухонная утварь</a></li>
+      <li><a href="#">Посуда</a></li>
+      <li><a href="#">Столовые приборы</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
 
+<!-- ================= HERO ================= -->
 <section class="hero">
-    <h2>Новая эра экологичной мебели</h2>
-    <p>Мы создаём современную мебель, используя природные материалы, минималистичный дизайн и эстетичный подход к цифровому представлению коллекций.</p>
-    <a href="#" class="button">Посмотреть коллекцию</a>
-</section>
-
-<section class="features">
-    <h2>Почему выбирают наш бренд</h2>
-
-    <ul>
-        <li>
-            <img src="assets/icons/Delivery.png" alt="Иконка доставки">
-            <h3>Доставка на следующий день</h3>
-            <p>Сделайте заказ до 15:00 и получите его уже завтра.</p>
-        </li>
-
-        <li>
-            <img src="assets/icons/Sprout.png" alt="Иконка листочка">
-            <h3>Переработанная упаковка</h3>
-            <p>Мы используем 100% переработанные материалы, уменьшая экологический след.</p>
-        </li>
-
-        <li>
-            <img src="assets/icons/Checkmark--outline.png" alt="Иконка галочки">
-            <h3>Лучшие цены</h3>
-            <p>Сочетание высокого качества и доступной стоимости.</p>
-        </li>
-
-        <li>
-            <img src="assets/icons/Purchase.png" alt="Иконка покупки">
-            <h3>Работа мастеров</h3>
-            <p>Каждое изделие создаётся вручную профессиональными ремесленниками.</p>
-        </li>
-    </ul>
-</section>
-
-<section class="product-gallery">
-    <h2>Новая коллекция керамики</h2>
-
-    <div class="products">
-
-        <article class="product">
-            <img src="assets/img/chair1.png" alt="Стул Dandy">
-            <h3>Стул «Dandy»</h3>
-            <p>250 £</p>
-        </article>
-
-        <article class="product">
-            <img src="assets/img/vase.png" alt="Набор ваз Rustic">
-            <h3>Набор ваз «Rustic»</h3>
-            <p>155 £</p>
-        </article>
-
-        <article class="product">
-            <img src="assets/img/chair2.png" alt="Ваза Silky">
-            <h3>Ваза «Silky»</h3>
-            <p>125 £</p>
-        </article>
-
-        <article class="product">
-            <img src="assets/img/chandelier.png" alt="Лампа Lucy">
-            <h3>Лампа «Lucy»</h3>
-            <p>399 £</p>
-        </article>
-
+  <div class="container hero__content">
+    <div class="hero__text">
+      <h2>Новая эра экологичной мебели</h2>
+      <p>
+        Мы создаём современную мебель, используя природные материалы, минималистичный дизайн и эстетичный подход к цифровому представлению коллекций.
+      </p>
+      <a href="#" class="button">Посмотреть коллекцию</a>
     </div>
 
-    <a href="#" class="button">Посмотреть коллекцию</a>
+    <div class="hero__image">
+      <img src="assets/img/chair1.png" alt="The Dandy Chair">
+    </div>
+  </div>
 </section>
 
-<section class="popular">
-    <h2>Популярные товары</h2>
+<!-- ================= FEATURES ================= -->
+<section class="features">
+  <div class="container">
+    <h2 class="section-title section-title--center">
+      Почему выбирают наш бренд
+    </h2>
 
-    <article class="product">
-        <img src="assets/img/chair1.png" alt="Стул Dandy">
+    <ul class="features__list">
+      <li class="feature">
+        <img src="assets/icons/Delivery.png">
+        <h3>Доставка на следующий день</h3>
+        <p>Сделайте заказ до 15:00 и получите его уже завтра.</p>
+      </li>
+
+      <li class="feature">
+        <img src="assets/icons/Sprout.png">
+        <h3>Переработанная упаковка</h3>
+        <p>Мы используем 100% переработанные материалы, уменьшая экологический след.</p>
+      </li>
+
+      <li class="feature">
+        <img src="assets/icons/Checkmark--outline.png">
+        <h3>Лучшие цены</h3>
+        <p>Сочетание высокого качества и доступной стоимости.</p>
+      </li>
+
+      <li class="feature">
+        <img src="assets/icons/Purchase.png">
+        <h3>Работа мастеров</h3>
+        <p>Каждое изделие создаётся вручную профессиональными ремесленниками.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section class="products">
+  <div class="container">
+    <h2 class="section-title">Новая коллекция керамики</h2>
+
+    <div class="products__grid">
+      <article class="card">
+        <img src="assets/img/chair1.png">
         <h3>Стул «Dandy»</h3>
-        <p>250 £</p>
-    </article>
+        <p>£250</p>
+      </article>
 
-    <article class="product">
-        <img src="assets/img/Large.png" alt="Диван Poplar">
+      <article class="card">
+        <img src="assets/img/vase.png">
+        <h3>Набор ваз «Rustic»</h3>
+        <p>£155</p>
+      </article>
+
+      <article class="card">
+        <img src="assets/img/chair2.png">
+        <h3>Ваза «Silky»</h3>
+        <p>£125</p>
+      </article>
+
+      <article class="card">
+        <img src="assets/img/chandelier.png">
+        <h3>Лампа «Lucy»</h3>
+        <p>£399</p>
+      </article>
+    </div>
+
+    <a href="#" class="button button--center">Посмотреть коллекцию</a>
+  </div>
+</section>
+
+<!-- ================= POPULAR ================= -->
+<section class="popular">
+  <div class="container">
+    <h2 class="section-title">Популярные товары</h2>
+
+    <div class="popular__grid">
+      <article class="card">
+        <img src="assets/img/chair1.png">
+        <h3>Стул «Dandy»</h3>
+        <p>£250</p>
+      </article>
+
+      <article class="card">
+        <img src="assets/img/chair1.png">
+        <h3>The Dandy chair</h3>
+        <p>£250</p>
+      </article>
+
+      <article class="card">
+        <img src="assets/img/Large.png">
         <h3>Диван «Poplar»</h3>
-        <p>980 £</p>
-    </article>
+        <p>£980</p>
+      </article>
+    </div>
 
-    <a href="#" class="button">Посмотреть коллекцию</a>
+    <a href="#" class="button button--center">Посмотреть коллекцию</a>
+  </div>
 </section>
 
+<!-- ================= NEWSLETTER ================= -->
 <section class="newsletter">
+  <div class="container newsletter__content">
     <h2>Присоединяйтесь и получайте бонусы</h2>
-    <p>Подпишитесь на рассылку и получайте эксклюзивные предложения, скидки и информацию о новых коллекциях.</p>
+    <p>
+      Подпишитесь на рассылку и получайте эксклюзивные предложения, скидки и информацию о новых коллекциях.
+    </p>
 
-    <form>
-        <input type="email" placeholder="Ваш email">
-        <button type="submit">Подписаться</button>
+    <form class="newsletter__form">
+      <input type="email" placeholder="your@email.com">
+      <button class="button">Подписаться</button>
     </form>
+  </div>
 </section>
 
+<!-- ================= ABOUT ================= -->
 <section class="about">
-    <h2>От лондонской студии до мирового бренда</h2>
-    <p>Когда мы создавали Avion, наша идея была простой: сделать качественную мебель доступной широкому кругу людей. Сегодня продукция Avion продаётся более чем в 400 магазинах по всему миру.</p>
-    <img src="assets/img/Right_image_sofa_bottom.png" alt="Фотография студии">
+  <div class="container about__content">
+    <div>
+      <h2>От лондонской студии до мирового бренда</h2>
+      <p>
+        Когда мы создавали Avion, наша идея была простой: сделать качественную мебель доступной широкому кругу людей. 
+        Сегодня продукция Avion продаётся более чем в 400 магазинах по всему миру.
+      </p>
+    </div>
+
+    <img src="assets/img/Right_image_sofa_bottom.png">
+  </div>
 </section>
 
 </main>
 
-<footer>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
 
-    <div class="footer-nav">
-
-        <section>
-            <h3>Меню</h3>
-            <ul>
-                <li><a href="#">Новинки</a></li>
-                <li><a href="#">Хиты продаж</a></li>
-                <li><a href="#">Недавно просмотренные</a></li>
-                <li><a href="#">Популярное</a></li>
-                <li><a href="#">Все товары</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Категории</h3>
-            <ul>
-                <li><a href="#">Керамика</a></li>
-                <li><a href="#">Мебель</a></li>
-                <li><a href="#">Декор</a></li>
-                <li><a href="#">Горшки</a></li>
-                <li><a href="#">Стулья</a></li>
-                <li><a href="#">Посуда</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>О компании</h3>
-            <ul>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Вакансии</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Политика конфиденциальности</a></li>
-                <li><a href="#">Возврат товара</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Подписка</h3>
-            <form>
-                <input type="email" placeholder="Ваш email">
-                <button type="submit">Подписаться</button>
-            </form>
-        </section>
-
+  <!-- FOOTER TOP -->
+  <div class="container footer__top">
+    <div>
+      <h3>Меню</h3>
+      <ul>
+        <li><a href="#">Новинки</a></li>
+        <li><a href="#">Хиты продаж</a></li>
+        <li><a href="#">Недавно просмотренные</a></li>
+        <li><a href="#">Популярное</a></li>
+        <li><a href="#">Все товары</a></li>
+      </ul>
     </div>
 
-    <div class="social-icons">
-        <a href="#"><img src="assets/icons/Logo--skype.png" alt="Skype"></a>
-        <a href="#"><img src="assets/icons/Logo--pinterest.png" alt="Pinterest"></a>
-        <a href="#"><img src="assets/icons/Logo--linkedin.png" alt="LinkedIn"></a>
+    <div>
+      <h3>Категории</h3>
+      <ul>
+        <li><a href="#">Керамика</a></li>
+        <li><a href="#">Мебель</a></li>
+        <li><a href="#">Декор</a></li>
+        <li><a href="#">Горшки</a></li>
+        <li><a href="#">Стулья</a></li>
+        <li><a href="#">Посуда</a></li>
+      </ul>
     </div>
-    
-    <p>© 2022 Avion LTD</p>
+
+    <div>
+      <h3>О компании</h3>
+      <ul>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Вакансии</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Возврат товара</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Подписка</h3>
+      <input type="email" placeholder="your@email.com">
+    </div>
+  </div>
+
+  <!-- FOOTER BOTTOM -->
+  <hr class="footer__line">
+
+  <div class="container footer__bottom">
+    <p>Copyright 2022 Avion LTD</p>
+
+    <div class="footer__icons">
+      <img src="assets/icons/Logo--skype.png">
+      <img src="assets/icons/Logo--instagram.png">
+      <img src="assets/icons/Logo--facebook.png">
+      <img src="assets/icons/Logo--pinterest.png">
+      <img src="assets/icons/Logo--linkedin.png">
+      <img src="assets/icons/Logo--twitter.png">
+    </div>
+  </div>
+
 </footer>
+
 </body>
 </html>
