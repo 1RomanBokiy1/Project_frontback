@@ -342,9 +342,9 @@ img {
 /* < 768px */
 @media (max-width: 767px) {
   .nav__list {
-    flex-direction: column;
-    gap: 16px;
+    padding: 16px 24px;
   }
+
 
   .features__list,
   .products__grid,
