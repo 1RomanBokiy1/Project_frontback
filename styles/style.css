@@ -342,7 +342,8 @@ img {
 /* < 768px */
 @media (max-width: 767px) {
   .nav__list {
-    padding: 16px 24px;
+    flex-direction: column;
+    gap: 16px;
   }
 
 
