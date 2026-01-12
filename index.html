@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,22 +14,30 @@
 <header class="header">
   <div class="container header__top">
 
-    
     <div class="header__search">
       <img src="assets/icons/Search.png" alt="Search">
     </div>
 
     <h1 class="header__logo">Avion</h1>
 
+    <!-- Гамбургер-меню (мобильная версия) -->
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Открыть меню"
+            aria-expanded="false">
+      <span class="menu-toggle__line"></span>
+      <span class="menu-toggle__line"></span>
+      <span class="menu-toggle__line"></span>
+    </button>
+
     <div class="header__icons">
-      <img src="assets/icons/Shopping--cart.png" alt="Shopping--cart">
+      <img src="assets/icons/Shopping--cart.png" alt="Shopping cart">
       <img src="assets/icons/User--avatar.png" alt="Account">
     </div>
   </div>
 
   <hr class="header__line">
 
-  <nav class="nav">
+  <nav class="nav" id="mainNav">
     <ul class="nav__list">
       <li><a href="#">Горшки для растений</a></li>
       <li><a href="#">Керамика</a></li>
@@ -70,25 +78,25 @@
 
     <ul class="features__list">
       <li class="feature">
-        <img src="assets/icons/Delivery.png">
+        <img src="assets/icons/Delivery.png" alt="">
         <h3>Доставка на следующий день</h3>
         <p>Сделайте заказ до 15:00 и получите его уже завтра.</p>
       </li>
 
       <li class="feature">
-        <img src="assets/icons/Sprout.png">
+        <img src="assets/icons/Sprout.png" alt="">
         <h3>Переработанная упаковка</h3>
         <p>Мы используем 100% переработанные материалы, уменьшая экологический след.</p>
       </li>
 
       <li class="feature">
-        <img src="assets/icons/Checkmark--outline.png">
+        <img src="assets/icons/Checkmark--outline.png" alt="">
         <h3>Лучшие цены</h3>
         <p>Сочетание высокого качества и доступной стоимости.</p>
       </li>
 
       <li class="feature">
-        <img src="assets/icons/Purchase.png">
+        <img src="assets/icons/Purchase.png" alt="">
         <h3>Работа мастеров</h3>
         <p>Каждое изделие создаётся вручную профессиональными ремесленниками.</p>
       </li>
@@ -103,25 +111,25 @@
 
     <div class="products__grid">
       <article class="card">
-        <img src="assets/img/chair1.png">
+        <img src="assets/img/chair1.png" alt="">
         <h3>Стул «Dandy»</h3>
         <p>£250</p>
       </article>
 
       <article class="card">
-        <img src="assets/img/vase.png">
+        <img src="assets/img/vase.png" alt="">
         <h3>Набор ваз «Rustic»</h3>
         <p>£155</p>
       </article>
 
       <article class="card">
-        <img src="assets/img/vase.png">
+        <img src="assets/img/vase.png" alt="">
         <h3>Ваза «Silky»</h3>
         <p>£125</p>
       </article>
 
       <article class="card">
-        <img src="assets/img/chandelier.png">
+        <img src="assets/img/chandelier.png" alt="">
         <h3>Лампа «Lucy»</h3>
         <p>£399</p>
       </article>
@@ -138,19 +146,19 @@
 
     <div class="popular__grid">
       <article class="card">
-        <img src="assets/img/Large.png">
+        <img src="assets/img/Large.png" alt="">
         <h3>Диван «Poplar»</h3>
         <p>£980</p>
       </article>
 
       <article class="card">
-        <img src="assets/img/chair1.png">
+        <img src="assets/img/chair1.png" alt="">
         <h3>The Dandy chair</h3>
         <p>£250</p>
       </article>
 
       <article class="card">
-        <img src="assets/img/chair2.png">
+        <img src="assets/img/chair2.png" alt="">
         <h3>Диван «Poplar»</h3>
         <p>£980</p>
       </article>
@@ -181,12 +189,12 @@
     <div>
       <h2>От лондонской студии до мирового бренда</h2>
       <p>
-        Когда мы создавали Avion, наша идея была простой: сделать качественную мебель доступной широкому кругу людей. 
+        Когда мы создавали Avion, наша идея была простой: сделать качественную мебель доступной широкому кругу людей.
         Сегодня продукция Avion продаётся более чем в 400 магазинах по всему миру.
       </p>
     </div>
 
-    <img src="assets/img/Right_image_sofa_bottom.png">
+    <img src="assets/img/Right_image_sofa_bottom.png" alt="">
   </div>
 </section>
 
@@ -195,7 +203,6 @@
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
 
-  <!-- FOOTER TOP -->
   <div class="container footer__top">
     <div>
       <h3>Меню</h3>
@@ -237,23 +244,28 @@
     </div>
   </div>
 
-  <!-- FOOTER BOTTOM -->
   <hr class="footer__line">
 
   <div class="container footer__bottom">
     <p>Copyright 2022 Avion LTD</p>
 
     <div class="footer__icons">
-      <img src="assets/icons/Logo--linkedin.png">
-      <img src="assets/icons/Logo--instagram.png">
-      <img src="assets/icons/Logo--facebook.png">
-      <img src="assets/icons/Logo--pinterest.png">
-      <img src="assets/icons/Logo--linkedin.png">
-      <img src="assets/icons/Logo--twitter.png">
+      <img src="assets/icons/Logo--linkedin.png" alt="">
+      <img src="assets/icons/Logo--instagram.png" alt="">
+      <img src="assets/icons/Logo--facebook.png" alt="">
+      <img src="assets/icons/Logo--pinterest.png" alt="">
+      <img src="assets/icons/Logo--linkedin.png" alt="">
+      <img src="assets/icons/Logo--twitter.png" alt="">
     </div>
   </div>
 
 </footer>
 
+<!-- Кнопка "Наверх" -->
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">
+  ↑
+</button>
+
+<script src="scripts/menu.js"></script>
 </body>
 </html>
